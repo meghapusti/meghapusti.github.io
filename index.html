@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Megha Pusti — AI/ML Engineer & Builder</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%23faf6ed'/><text x='50%25' y='53%25' dominant-baseline='central' text-anchor='middle' font-family='Georgia,serif' font-size='17' font-style='italic' fill='%232c2a24'>m.</text></svg>">
 <meta name="description" content="Megha Pusti — Final-year CS&D student at SUTD. AI/ML engineer, RAG pipelines, full-stack systems. Twice interned at P&G.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -130,7 +131,7 @@ body.clicking #cur-ring { width: 24px; height: 24px; opacity: .8; }
   position: fixed; inset: 0; z-index: 9000;
   background: var(--charcoal);
   transform-origin: top;
-  animation: unveil .9s var(--ease-out) .05s forwards;
+  animation: unveil 1.3s var(--ease-out) .15s forwards;
 }
 @keyframes unveil { to { transform: scaleY(0); } }
 
@@ -341,7 +342,7 @@ h1.hero-name {
 }
 .marquee-inner {
   display: flex; white-space: nowrap;
-  animation: marquee 30s linear infinite;
+  animation: marquee 18s linear infinite;
   font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em; text-transform: uppercase;
   color: var(--textm);
 }
@@ -656,8 +657,8 @@ h1.hero-name {
   height: 100%;
 }
 .pcard:hover {
-  box-shadow: var(--shadow-xl);
-  transform: translateY(-6px) rotateX(2deg);
+  box-shadow: var(--shadow-xl), 0 0 0 1px var(--accent-light);
+  transform: translateY(-12px) rotateX(3deg) scale(1.02);
 }
 .pcard:active { transform: translateY(-2px); box-shadow: var(--shadow-md); }
 
@@ -665,9 +666,9 @@ h1.hero-name {
 .pcard::before {
   content: '';
   position: absolute; inset: 0; border-radius: var(--r-lg);
-  background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,.12) 50%, transparent 60%);
+  background: linear-gradient(105deg, transparent 35%, rgba(255,255,255,.22) 50%, transparent 65%);
   transform: translateX(-100%);
-  transition: transform .5s var(--ease);
+  transition: transform .65s var(--ease);
   pointer-events: none; z-index: 1;
 }
 .pcard:hover::before { transform: translateX(100%); }
@@ -890,7 +891,7 @@ footer {
 }
 
 /* ═══════════════ REVEAL ═══════════════ */
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 1s var(--ease), transform 1s var(--ease); }
 .reveal.visible { opacity: 1; transform: none; }
 .reveal-delay-1 { transition-delay: .1s; }
 .reveal-delay-2 { transition-delay: .2s; }
@@ -1087,7 +1088,7 @@ h1.hero-name {
 
     <div class="hero-right">
       <p class="hero-bio">
-        I build systems that <em>reason</em>. Production RAG pipelines, vector search, LLM integrations, compliance platforms — always with the same conviction: the best engineering lowers the cost of expertise for the people who need it most.
+        I build systems that <em>think</em>. From production RAG pipelines used daily by research scientists, to LLM-powered compliance platforms, to geopolitical intelligence tools trained on a decade of global data — I close the gap between what AI can do and what people actually need.
       </p>
       <p class="hero-bio" style="font-size:13px;color:var(--textm);margin-top:-10px">
         Merit Scholar · Minors: AI &amp; Digital Humanities · Specialisations: FinTech &amp; Data Analytics
@@ -1426,11 +1427,11 @@ h1.hero-name {
         Let's build<br>something<br><em>worth building.</em>
       </div>
       <p class="contact-note">I'm actively looking for full-time roles in AI/ML engineering, data science, or full-stack development. Singapore-based but open to relocation globally. If you're working on something interesting — reach out.</p>
-      <a href="/cdn-cgi/l/email-protection#b2dfd7d5dad3c2c7c1c6dbf2d5dfd3dbde9cd1dddf" class="btn btn-accent">Send an Email →</a>
+      <a href="mailto:meghapusti@gmail.com?subject=Let%27s%20Connect!&body=Hi%20Megha%2C%0A%0A" class="btn btn-accent">Let's Connect! →</a>
     </div>
     <div class="contact-right">
-      <a href="/cdn-cgi/l/email-protection#e18c848689809194929588a1868c80888dcf828e8c" class="clink">
-        <div><div class="c-lbl">Email</div><div class="c-val"><span class="__cf_email__" data-cfemail="meghapusti@gmail.com">meghapusti@gmail.com</span></div></div>
+      <a href="mailto:meghapusti@gmail.com" class="clink">
+        <div><div class="c-lbl">Email</div><div class="c-val">meghapusti@gmail.com</div></div>
         <div class="c-arr">↗</div>
       </a>
       <a href="https://www.linkedin.com/in/meghapusti/" target="_blank" rel="noopener" class="clink">
@@ -1441,8 +1442,8 @@ h1.hero-name {
         <div><div class="c-lbl">GitHub</div><div class="c-val">github.com/meghapusti</div></div>
         <div class="c-arr">↗</div>
       </a>
-      <a href="/cdn-cgi/l/email-protection#751810121d142a050006011c35180c18141c195b060001115b1011005b0612" class="clink">
-        <div><div class="c-lbl">University Email</div><div class="c-val"><span class="__cf_email__" data-cfemail="megha_pusti@mymail.sutd.edu.sg">megha_pusti@mymail.sutd.edu.sg</span></div></div>
+      <a href="mailto:megha_pusti@mymail.sutd.edu.sg" class="clink">
+        <div><div class="c-lbl">University Email</div><div class="c-val">megha_pusti@mymail.sutd.edu.sg</div></div>
         <div class="c-arr">↗</div>
       </a>
     </div>
@@ -1454,83 +1455,100 @@ h1.hero-name {
   <span>Built from scratch · Deploy via GitHub Pages</span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ─── CURSOR ─────────────────────────────────────────── */
 const dot = document.getElementById('cur-dot');
 const ring = document.getElementById('cur-ring');
-let mx=0,my=0,rx=0,ry=0,curRafId=null;
-document.addEventListener('mousemove', e=>{ mx=e.clientX; my=e.clientY; }, {passive:true});
-// use transform3d — runs on compositor, no layout
+let mx = 0, my = 0, rx = 0, ry = 0;
+
+// Track mouse position — passive for perf
+document.addEventListener('mousemove', e => { mx = e.clientX; my = e.clientY; }, { passive: true });
+
+// Single rAF loop for both dot and ring — compositor only, no layout
 dot.style.left = '0'; dot.style.top = '0';
 ring.style.left = '0'; ring.style.top = '0';
-(function animRing(){
-  rx+=(mx-rx)*.13; ry+=(my-ry)*.13;
-  dot.style.transform  = `translate3d(${mx}px,${my}px,-50%,-50%)`;
+(function animRing() {
+  rx += (mx - rx) * 0.13;
+  ry += (my - ry) * 0.13;
   dot.style.transform  = `translate3d(calc(${mx}px - 50%), calc(${my}px - 50%), 0)`;
   ring.style.transform = `translate3d(calc(${rx}px - 50%), calc(${ry}px - 50%), 0)`;
   requestAnimationFrame(animRing);
 })();
+
 const hEls = 'a,button,.pcard,.card-scene,.clink,.spill,.fbtn,.modal-close,.modal-link';
-document.addEventListener('mouseover', e=>{ if(e.target.closest(hEls)) document.body.classList.add('hovering'); }, {passive:true});
-document.addEventListener('mouseout',  e=>{ if(e.target.closest(hEls)) document.body.classList.remove('hovering'); }, {passive:true});
-document.addEventListener('mousedown', ()=>document.body.classList.add('clicking'));
-document.addEventListener('mouseup',   ()=>document.body.classList.remove('clicking'));
+document.addEventListener('mouseover', e => { if (e.target.closest(hEls)) document.body.classList.add('hovering'); }, { passive: true });
+document.addEventListener('mouseout',  e => { if (e.target.closest(hEls)) document.body.classList.remove('hovering'); }, { passive: true });
+document.addEventListener('mousedown', () => document.body.classList.add('clicking'));
+document.addEventListener('mouseup',   () => document.body.classList.remove('clicking'));
 
 /* ─── PROGRESS BAR ───────────────────────────────────── */
 const pb = document.getElementById('pgbar');
-window.addEventListener('scroll', ()=>{
-  const h = document.documentElement;
-  pb.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';
-}, {passive:true});
+let pbTicking = false;
+window.addEventListener('scroll', () => {
+  if (!pbTicking) {
+    requestAnimationFrame(() => {
+      const h = document.documentElement;
+      pb.style.width = (h.scrollTop / (h.scrollHeight - h.clientHeight) * 100) + '%';
+      pbTicking = false;
+    });
+    pbTicking = true;
+  }
+}, { passive: true });
 
 /* ─── THEME ──────────────────────────────────────────── */
-document.getElementById('theme-btn').addEventListener('click', ()=>{
+document.getElementById('theme-btn').addEventListener('click', () => {
   const html = document.documentElement;
-  html.setAttribute('data-theme', html.getAttribute('data-theme')==='dark'?'light':'dark');
+  html.setAttribute('data-theme', html.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
 });
 
 /* ─── NAV ACTIVE ─────────────────────────────────────── */
 const navLinks = document.querySelectorAll('.nav-link');
-const sectionIds = ['about','experience','projects','contact'];
-window.addEventListener('scroll', ()=>{
-  let cur='';
-  sectionIds.forEach(id=>{ const el=document.getElementById(id); if(el&&window.scrollY>=el.offsetTop-100) cur=id; });
-  navLinks.forEach(l=>{ l.classList.toggle('active', l.getAttribute('href')==='#'+cur); });
-},{passive:true});
+const sectionIds = ['about', 'experience', 'projects', 'contact'];
+let navTicking = false;
+window.addEventListener('scroll', () => {
+  if (!navTicking) {
+    requestAnimationFrame(() => {
+      let cur = '';
+      sectionIds.forEach(id => { const el = document.getElementById(id); if (el && window.scrollY >= el.offsetTop - 100) cur = id; });
+      navLinks.forEach(l => { l.classList.toggle('active', l.getAttribute('href') === '#' + cur); });
+      navTicking = false;
+    });
+    navTicking = true;
+  }
+}, { passive: true });
 
 /* ─── ROLE TICKER — typewriter ───────────────────────── */
-const roles=['AI / ML Engineer','RAG Pipeline Architect','Full-Stack Builder','NLP Researcher','Data Scientist','Systems Designer'];
-let ri=0;
-const ticker=document.getElementById('role-ticker');
-let twTimeout=null;
+const roles = ['AI / ML Engineer', 'RAG Pipeline Architect', 'Full-Stack Builder', 'NLP Researcher', 'Data Scientist', 'Systems Designer'];
+let ri = 0;
+const ticker = document.getElementById('role-ticker');
+let twTimeout = null;
 
 function typeWriter(text, el, cb) {
-  let i=0;
+  let i = 0;
   function type() {
-    if(i<=text.length){ el.textContent=text.slice(0,i); i++; twTimeout=setTimeout(type, 62); }
-    else { twTimeout=setTimeout(cb, 1600); }
+    if (i <= text.length) { el.textContent = text.slice(0, i); i++; twTimeout = setTimeout(type, 62); }
+    else { twTimeout = setTimeout(cb, 1600); }
   }
   type();
 }
 function backspace(el, cb) {
-  let txt=el.textContent;
+  let txt = el.textContent;
   function del() {
-    if(txt.length>0){ txt=txt.slice(0,-1); el.textContent=txt; twTimeout=setTimeout(del, 38); }
-    else { twTimeout=setTimeout(cb, 220); }
+    if (txt.length > 0) { txt = txt.slice(0, -1); el.textContent = txt; twTimeout = setTimeout(del, 38); }
+    else { twTimeout = setTimeout(cb, 220); }
   }
   del();
 }
 function cycleTicker() {
-  backspace(ticker, ()=>{
-    ri=(ri+1)%roles.length;
+  backspace(ticker, () => {
+    ri = (ri + 1) % roles.length;
     typeWriter(roles[ri], ticker, cycleTicker);
   });
 }
-// Start with first role already typed, then cycle
 typeWriter(roles[0], ticker, cycleTicker);
 
 /* ─── PROJECTS DATA ──────────────────────────────────── */
-const PROJECTS=[
+const PROJECTS = [
   {id:1,title:'GeoPulse',year:'2026',status:'live',sLabel:'Live',
     tags:['ai','res'],
     shortDesc:'Geopolitical risk intelligence platform. 11 years of GDELT data, LightGBM market signal classifiers, multi-stage NLP, production FastAPI backend.',
@@ -1590,7 +1608,7 @@ const PROJECTS=[
     ],
     insight:'Offline ETL pipeline processes .xlsx case logs and .docx knowledge base docs into FAISS indexes — no raw row data ever exposed during inference. Security-first RAG architecture by design.',
     stack:['Python','FastAPI','FAISS','sentence-transformers','Azure OpenAI GPT-4.1','Streamlit','SQLite','openpyxl','python-docx','Pydantic'],
-    links:[{l:'GitHub',u:'https://github.com/meghapusti'}]},
+    links:[{l:'GitHub',u:'https://github.com/meghapusti/reliAI'}]},
 
   {id:5,title:'Singlish Emotion Recognition',year:'2025',status:'deployed',sLabel:'Deployed',
     tags:['ai','res'],
@@ -1680,7 +1698,7 @@ const PROJECTS=[
     ],
     insight:'Leaf splits copy the middle key upward (it stays in the leaf); internal splits push the middle key upward (it leaves the internal page entirely). Getting this asymmetry wrong silently corrupts the tree — no error message, just wrong query results.',
     stack:['Java','B+ Tree','Strict 2PL','ACID Transactions','Volcano Model','Grace Hash Join','BFS Deadlock Detection','JUnit 4','Apache Ant'],
-    links:[]},
+    links:[{l:'GitHub',u:'https://github.com/meghapusti/Simple.DB'}]},
 
   {id:11,title:'ChronoQuest XR',year:'2025',status:'built',sLabel:'Built',
     tags:['sys'],
@@ -1695,7 +1713,7 @@ const PROJECTS=[
     ],
     insight:'Players reported stronger "presence" and better fact recall vs passive delivery. Every design decision had to earn its place — the VR comfort constraint forced ruthless prioritisation.',
     stack:['Unity 6','C#','Meta Quest 3','XR Interaction Toolkit','ScriptableObjects','XR Socket Interactor','Spatial Audio','Haptics'],
-    links:[]},
+    links:[{l:'GitHub',u:'https://github.com/meghapusti/Chronoquest'}]},
 
   {id:12,title:'Shadow of the Silk Dagger — Jubensha LARP',year:'2025',status:'built',sLabel:'Built',
     tags:['des'],
@@ -1740,7 +1758,7 @@ const PROJECTS=[
     ],
     insight:'A 1-nanosecond timing slip in the WS2812B protocol causes the LED strip to interpret the entire bitstream as a reset signal — the display goes dark with no error. The most dangerous assumption in hardware is that timing is "close enough."',
     stack:['Lucid HDL','FPGA','Xilinx Artix-7','WS2812B Protocol','Multi-FSM Design','Custom ALU','Dual-Port SRAM','ROM','Alchitry Labs','Vivado'],
-    links:[]},
+    links:[{l:'GitHub',u:'https://github.com/meghapusti/MemoryMaze_FPGA'}]},
 
   {id:15,title:'VoluntNear',year:'2024',status:'built',sLabel:'Built',
     tags:['fs'],
@@ -1839,7 +1857,24 @@ const PROJECTS=[
     stack:['Design Thinking','Community Outreach','Urban Design','Cross-Cultural Collaboration','Figma'],
     links:[]},
 
-  {id:22,title:'Automated Agriculture System',year:'2021',status:'award',sLabel:'🏆 1st Place',
+
+  {id:22,title:'Python Adventure Game',year:'2022',status:'built',sLabel:'Built',
+    tags:['sys','des'],
+    shortDesc:'Story-driven multi-chapter Python adventure game with 4 embedded minigames — Brick Breaker, Tic-Tac-Toe, colour-memory, and a top-down runner. Full tkinter GUI, built collaboratively across a 5-person team.',
+    overview:"Multi-chapter narrative adventure game built in Python as part of a 5-person team. Combines story-driven structure with four fully playable embedded minigames, each built from scratch using only Python's standard library — a genuine exercise in collaborative software engineering across five independent modules.",
+    highlights:[
+      'OOP architecture throughout: class hierarchies (GameObject, Ball, Paddle, Brick, Color) with inheritance, encapsulation, and method overriding across all minigame modules',
+      'Full tkinter GUI: main menu system, dynamic canvas-swap scene management, multi-window toplevels, and button-driven navigation — zero external UI libraries',
+      'Brick Breaker physics engine from scratch: ball–paddle–brick collision detection, directional deflection logic, multi-hit brick mechanics, and score tracking',
+      'Python turtle graphics for Tic-Tac-Toe board rendering and a colour-sequence memory game with custom turtle shapes and click listeners',
+      'Top-down movement game with arrow-key input, escalating difficulty, and live score tracking; subprocess chaining to sequence scenes and minigames into a seamless narrative flow',
+      'Asset integration: GIF sprite animations (four directional character states) and large PNG scene backgrounds in tkinter canvases; shared file path conventions enabling clean 5-module integration'
+    ],
+    insight:'Coordinating five independent modules into one unified game without a shared framework forced explicit interface contracts from day one. Consistent naming conventions and shared asset paths were not nice-to-haves — they were the glue that made the whole thing run.',
+    stack:['Python','tkinter','turtle Graphics','OOP','subprocess','Event-Driven Programming','Game Loop Architecture','Sprite Animation'],
+    links:[{l:'GitHub',u:'https://github.com/meghapusti/RolePlayingAdventureGame'}]},
+
+  {id:23,title:'Automated Agriculture System',year:'2021',status:'award',sLabel:'🏆 1st Place',
     tags:['sys'],
     shortDesc:'1st Place & Popularity Award, Engineering Innovation Challenge 2021 (IES). Adaptive Arduino irrigation system with wireless monitoring website.',
     overview:'Won 1st Place and Popularity Award in Engineering Innovation Challenge 2021, Institution of Engineers Singapore, as part of a team of 4.',
@@ -1852,7 +1887,7 @@ const PROJECTS=[
     stack:['Arduino','Robotics','Soil Moisture Sensors','Web Development','UV Research'],
     links:[]},
 
-  {id:23,title:'IR Navigator — Assistive Device',year:'2019',status:'award',sLabel:'Merit Award',
+  {id:24,title:'IR Navigator — Assistive Device',year:'2019',status:'award',sLabel:'Merit Award',
     tags:['sys','des'],
     shortDesc:'Merit Award, EIC 2019 (IES). Arduino navigation aid for visually impaired persons, designed iteratively with SAVH user feedback.',
     overview:'Merit Award, Engineering Innovation Challenge 2019, IES. Arduino-based navigation aid for visually impaired persons, designed with real user feedback.',
@@ -1867,35 +1902,35 @@ const PROJECTS=[
 ];
 
 /* ─── BADGE MAPS ─────────────────────────────────────── */
-const TB={'ai':'badge-ai','fs':'badge-fs','sys':'badge-sys','res':'badge-res','des':'badge-des'};
-const TL={'ai':'AI/ML','fs':'Full-Stack','sys':'Systems','res':'Research','des':'Design'};
-const SB={
-  live:'badge-live',deployed:'badge-live',capstone:'badge-live',
-  wip:'badge-wip',hackathon:'badge-wip',
-  built:'badge-built',academic:'badge-academic',
-  research:'badge-res',award:'badge-award'
+const TB = { 'ai':'badge-ai','fs':'badge-fs','sys':'badge-sys','res':'badge-res','des':'badge-des' };
+const TL = { 'ai':'AI/ML','fs':'Full-Stack','sys':'Systems','res':'Research','des':'Design' };
+const SB = {
+  live:'badge-live', deployed:'badge-live', capstone:'badge-live',
+  wip:'badge-wip', hackathon:'badge-wip',
+  built:'badge-built', academic:'badge-academic',
+  research:'badge-res', award:'badge-award'
 };
 
 /* ─── RENDER CARDS ───────────────────────────────────── */
-function renderCards(tag){
-  const grid=document.getElementById('cards-grid');
-  grid.innerHTML='';
-  const items=PROJECTS.filter(p=>tag==='all'||p.tags.includes(tag));
-  items.forEach((p,i)=>{
-    const typeBadges=p.tags.map(t=>`<span class="badge ${TB[t]}">${TL[t]}</span>`).join('');
-    const sBadge=`<span class="badge ${SB[p.status]||'badge-built'}">${p.sLabel}</span>`;
-    const stack=p.stack.slice(0,5).map(s=>`<span class="stk">${s}</span>`).join('')
-      +(p.stack.length>5?`<span class="stk">+${p.stack.length-5}</span>`:'');
+function renderCards(tag) {
+  const grid = document.getElementById('cards-grid');
+  grid.innerHTML = '';
+  const items = PROJECTS.filter(p => tag === 'all' || p.tags.includes(tag));
+  items.forEach((p, i) => {
+    const typeBadges = p.tags.map(t => `<span class="badge ${TB[t]}">${TL[t]}</span>`).join('');
+    const sBadge = `<span class="badge ${SB[p.status] || 'badge-built'}">${p.sLabel}</span>`;
+    const stack = p.stack.slice(0, 5).map(s => `<span class="stk">${s}</span>`).join('')
+      + (p.stack.length > 5 ? `<span class="stk">+${p.stack.length - 5}</span>` : '');
 
-    const scene=document.createElement('div');
-    scene.className='card-scene reveal';
+    const scene = document.createElement('div');
+    scene.className = 'card-scene reveal';
 
-    const card=document.createElement('div');
-    card.className='pcard';
-    card.innerHTML=`
+    const card = document.createElement('div');
+    card.className = 'pcard';
+    card.innerHTML = `
       <div class="pcard-accent-bar"></div>
       <div class="pcard-head">
-        <span class="pcard-num">${String(i+1).padStart(2,'0')}</span>
+        <span class="pcard-num">${String(i + 1).padStart(2, '0')}</span>
         <div class="pcard-badges">${sBadge}${typeBadges}</div>
       </div>
       <div class="pcard-body">
@@ -1909,91 +1944,89 @@ function renderCards(tag){
         <span class="pcard-arrow">↗</span>
       </div>`;
 
-    // Click: little scale + bright flash then open modal
-    card.addEventListener('click', ()=>{
-      card.style.transition='transform .18s var(--ease), box-shadow .18s, filter .18s';
-      card.style.transform='scale(0.96) translateY(2px)';
-      card.style.filter='brightness(1.06)';
-      setTimeout(()=>{
-        card.style.transform='';
-        card.style.filter='';
+    card.addEventListener('click', () => {
+      card.style.transition = 'transform .18s var(--ease), box-shadow .18s, filter .18s';
+      card.style.transform = 'scale(0.96) translateY(2px)';
+      card.style.filter = 'brightness(1.06)';
+      setTimeout(() => {
+        card.style.transform = '';
+        card.style.filter = '';
         openModal(p.id);
-      },180);
+      }, 180);
     });
 
     scene.appendChild(card);
     grid.appendChild(scene);
 
-    setTimeout(()=>{
-      const ro=new IntersectionObserver(ents=>{
-        ents.forEach(e=>{
-          if(e.isIntersecting) e.target.classList.add('visible');
+    setTimeout(() => {
+      const ro = new IntersectionObserver(ents => {
+        ents.forEach(e => {
+          if (e.isIntersecting) e.target.classList.add('visible');
           else e.target.classList.remove('visible');
         });
-      },{threshold:.05});
+      }, { threshold: .05 });
       ro.observe(scene);
-    },i*28);
+    }, i * 28);
   });
-  // cursor hover on new cards
-  document.querySelectorAll('.card-scene,.pcard').forEach(el=>{
-    el.addEventListener('mouseenter',()=>document.body.classList.add('hovering'));
-    el.addEventListener('mouseleave',()=>document.body.classList.remove('hovering'));
+
+  document.querySelectorAll('.card-scene,.pcard').forEach(el => {
+    el.addEventListener('mouseenter', () => document.body.classList.add('hovering'));
+    el.addEventListener('mouseleave', () => document.body.classList.remove('hovering'));
   });
 }
 
-function filter(tag,btn){
-  document.querySelectorAll('.fbtn').forEach(b=>b.classList.remove('active'));
+function filter(tag, btn) {
+  document.querySelectorAll('.fbtn').forEach(b => b.classList.remove('active'));
   btn.classList.add('active');
   renderCards(tag);
 }
 
 /* ─── MODAL ──────────────────────────────────────────── */
-function openModal(id){
-  const p=PROJECTS.find(x=>x.id===id);
-  if(!p)return;
-  const tB=p.tags.map(t=>`<span class="badge ${TB[t]}">${TL[t]}</span>`).join(' ');
-  const sB=`<span class="badge ${SB[p.status]||'badge-built'}">${p.sLabel}</span>`;
-  document.getElementById('m-meta').innerHTML=`${sB} ${tB} <span style="opacity:.4;margin-left:4px">· ${p.year}</span>`;
-  document.getElementById('m-title').textContent=p.title;
+function openModal(id) {
+  const p = PROJECTS.find(x => x.id === id);
+  if (!p) return;
+  const tB = p.tags.map(t => `<span class="badge ${TB[t]}">${TL[t]}</span>`).join(' ');
+  const sB = `<span class="badge ${SB[p.status] || 'badge-built'}">${p.sLabel}</span>`;
+  document.getElementById('m-meta').innerHTML = `${sB} ${tB} <span style="opacity:.4;margin-left:4px">· ${p.year}</span>`;
+  document.getElementById('m-title').textContent = p.title;
 
-  const hi=p.highlights.length
-    ?`<div class="insights">${p.highlights.map(h=>`<div class="insight"><span class="i-dot">▸</span><span>${h}</span></div>`).join('')}</div>`:'';
-  const ins=p.insight?`<div class="highlight-box">${p.insight}</div>`:'';
+  const hi = p.highlights.length
+    ? `<div class="insights">${p.highlights.map(h => `<div class="insight"><span class="i-dot">▸</span><span>${h}</span></div>`).join('')}</div>` : '';
+  const ins = p.insight ? `<div class="highlight-box">${p.insight}</div>` : '';
 
-  document.getElementById('m-main').innerHTML=`
+  document.getElementById('m-main').innerHTML = `
     <div class="case-block"><div class="case-label">Overview</div><div class="case-text"><p>${p.overview}</p></div></div>
-    ${hi?`<div class="case-block"><div class="case-label">Engineering Highlights</div>${hi}</div>`:''}
-    ${ins?`<div class="case-block"><div class="case-label">Core Insight</div>${ins}</div>`:''}`;
+    ${hi ? `<div class="case-block"><div class="case-label">Engineering Highlights</div>${hi}</div>` : ''}
+    ${ins ? `<div class="case-block"><div class="case-label">Core Insight</div>${ins}</div>` : ''}`;
 
-  const li=p.links.length
-    ?`<div class="modal-sb-block"><div class="modal-sb-label">Links</div><div class="modal-links">${p.links.map(l=>`<a href="${l.u}" target="_blank" rel="noopener" class="modal-link">${l.l} <span>↗</span></a>`).join('')}</div></div>`:'';
+  const li = p.links.length
+    ? `<div class="modal-sb-block"><div class="modal-sb-label">Links</div><div class="modal-links">${p.links.map(l => `<a href="${l.u}" target="_blank" rel="noopener" class="modal-link">${l.l} <span>↗</span></a>`).join('')}</div></div>` : '';
 
-  document.getElementById('m-sidebar').innerHTML=`
+  document.getElementById('m-sidebar').innerHTML = `
     <div class="modal-sb-block"><div class="modal-sb-label">Stack</div>
-    <div class="modal-stack-tags">${p.stack.map(s=>`<span class="mst">${s}</span>`).join('')}</div></div>
+    <div class="modal-stack-tags">${p.stack.map(s => `<span class="mst">${s}</span>`).join('')}</div></div>
     ${li}`;
 
   document.getElementById('modal-overlay').classList.add('open');
-  document.getElementById('modal-box').scrollTop=0;
-  document.body.style.overflow='hidden';
+  document.getElementById('modal-box').scrollTop = 0;
+  document.body.style.overflow = 'hidden';
 }
-function closeModal(e){if(e.target===document.getElementById('modal-overlay'))closeModalDirect();}
-function closeModalDirect(){
+function closeModal(e) { if (e.target === document.getElementById('modal-overlay')) closeModalDirect(); }
+function closeModalDirect() {
   document.getElementById('modal-overlay').classList.remove('open');
-  document.body.style.overflow='';
+  document.body.style.overflow = '';
 }
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModalDirect();});
-
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModalDirect(); });
 
 /* ─── SCROLL REVEAL ──────────────────────────────────── */
 const revealEls = document.querySelectorAll('.reveal');
-const revealObs = new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting) e.target.classList.add('visible');
+const revealObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
     else e.target.classList.remove('visible');
   });
-},{threshold:.06});
-revealEls.forEach(el=>revealObs.observe(el));
+}, { threshold: .06 });
+revealEls.forEach(el => revealObs.observe(el));
 
 /* ─── INIT CARDS ─────────────────────────────────────── */
 renderCards('all');
@@ -2001,33 +2034,28 @@ renderCards('all');
 /* ─── EXP CARD SLIDE TOGGLE ─────────────────────────── */
 function toggleExp(card) {
   const isOpen = card.classList.contains('open');
-  // close any open card first
   document.querySelectorAll('.exp-card.open').forEach(c => {
     c.classList.remove('open');
     c.querySelector('.exp-track').style.transform = '';
   });
   if (!isOpen) {
     card.classList.add('open');
-    // slide left by face panel's collapsed width (280px)
     card.querySelector('.exp-track').style.transform = 'translateX(-280px)';
   }
 }
 
 /* ══════════════════════════════════════════════════════
-   NEW EFFECTS — added enhancements
+   EFFECTS
 ══════════════════════════════════════════════════════ */
 
-/* ─── 1. ANIMATED COUNTER — stats count up on scroll ── */
-function animateCounter(el, target, suffix='') {
+/* ─── 1. ANIMATED COUNTER ────────────────────────────── */
+function animateCounter(el, target, suffix = '') {
   const start = performance.now();
   const dur = 1400;
-  const isInfinity = el.dataset.counterInfinity;
-  if (isInfinity) return; // skip infinity symbol
-  const from = 0;
   function step(now) {
     const p = Math.min((now - start) / dur, 1);
-    const ease = 1 - Math.pow(1 - p, 3); // ease-out-cubic
-    const val = Math.round(from + (target - from) * ease);
+    const ease = 1 - Math.pow(1 - p, 3);
+    const val = Math.round(target * ease);
     el.textContent = val + suffix;
     if (p < 1) requestAnimationFrame(step);
     else el.textContent = target + suffix;
@@ -2040,7 +2068,6 @@ const statObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
       const el = e.target;
-      // store original text once
       if (!el.dataset.originalText) el.dataset.originalText = el.textContent.trim();
       const raw = el.dataset.originalText;
       if (raw === '∞') return;
@@ -2051,23 +2078,22 @@ const statObs = new IntersectionObserver(entries => {
       animateCounter(el, num, suffix);
     }
   });
-}, {threshold: 0.5});
+}, { threshold: 0.5 });
 statEls.forEach(el => statObs.observe(el));
 
-/* ─── 2. MAGNETIC BUTTONS ─────────────────────────────
-   Hero CTA buttons subtly pull toward the cursor       */
+/* ─── 2. MAGNETIC BUTTONS ────────────────────────────── */
 document.querySelectorAll('.hero-cta .btn').forEach(btn => {
   let magRaf = null;
   btn.addEventListener('mousemove', e => {
     if (magRaf) return;
     magRaf = requestAnimationFrame(() => {
       const r = btn.getBoundingClientRect();
-      const dx = (e.clientX - (r.left + r.width/2)) * 0.28;
-      const dy = (e.clientY - (r.top  + r.height/2)) * 0.28;
+      const dx = (e.clientX - (r.left + r.width / 2)) * 0.28;
+      const dy = (e.clientY - (r.top + r.height / 2)) * 0.28;
       btn.style.transform = `translate3d(${dx}px,${dy}px,0) translateY(-2px)`;
       magRaf = null;
     });
-  });
+  }, { passive: true });
   btn.addEventListener('mouseleave', () => {
     if (magRaf) { cancelAnimationFrame(magRaf); magRaf = null; }
     btn.style.transform = '';
@@ -2078,8 +2104,7 @@ document.querySelectorAll('.hero-cta .btn').forEach(btn => {
   });
 });
 
-/* ─── 3. HERO NAME PARALLAX TILT ─────────────────────
-   The hero name gently tilts tracking the mouse        */
+/* ─── 3. HERO NAME PARALLAX TILT ─────────────────────── */
 const heroLeft = document.querySelector('.hero-left');
 const heroName = document.querySelector('h1.hero-name');
 if (heroLeft && heroName) {
@@ -2089,12 +2114,12 @@ if (heroLeft && heroName) {
     tiltRaf = requestAnimationFrame(() => {
       const r = heroLeft.getBoundingClientRect();
       const nx = (e.clientX - r.left) / r.width - 0.5;
-      const ny = (e.clientY - r.top)  / r.height - 0.5;
+      const ny = (e.clientY - r.top) / r.height - 0.5;
       heroName.style.transform = `rotateY(${nx * 4}deg) rotateX(${-ny * 3}deg)`;
       heroName.style.transition = 'transform .05s linear';
       tiltRaf = null;
     });
-  }, {passive: true});
+  }, { passive: true });
   heroLeft.addEventListener('mouseleave', () => {
     if (tiltRaf) { cancelAnimationFrame(tiltRaf); tiltRaf = null; }
     heroName.style.transform = 'rotateY(0) rotateX(0)';
@@ -2102,8 +2127,7 @@ if (heroLeft && heroName) {
   });
 }
 
-/* ─── 4. CARD SPOTLIGHT ─────────────────────────────
-   Radial spotlight follows cursor inside each pcard   */
+/* ─── 4. CARD SPOTLIGHT ──────────────────────────────── */
 function attachSpotlight(card) {
   if (card._spotlight) return;
   card._spotlight = true;
@@ -2117,13 +2141,12 @@ function attachSpotlight(card) {
       card.classList.add('spotlight-active');
       spotRaf = null;
     });
-  }, {passive: true});
+  }, { passive: true });
   card.addEventListener('mouseleave', () => {
     if (spotRaf) { cancelAnimationFrame(spotRaf); spotRaf = null; }
     card.classList.remove('spotlight-active');
   });
 }
-// Attach on initial render + re-renders via MutationObserver
 document.querySelectorAll('.pcard').forEach(attachSpotlight);
 const cardsGrid = document.getElementById('cards-grid');
 if (cardsGrid) {
@@ -2132,22 +2155,20 @@ if (cardsGrid) {
   }).observe(cardsGrid, { childList: true, subtree: true });
 }
 
-/* ─── 5. SKILL PILL HOVER RIPPLE ────────────────────
-   Clicking a skill pill spawns a quick ripple ring    */
+/* ─── 5. SKILL PILL RIPPLE ───────────────────────────── */
 document.querySelectorAll('.spill').forEach(pill => {
   pill.addEventListener('click', e => {
     const r = pill.getBoundingClientRect();
     const ripple = document.createElement('span');
     ripple.className = 'pill-ripple';
     ripple.style.left = (e.clientX - r.left) + 'px';
-    ripple.style.top  = (e.clientY - r.top)  + 'px';
+    ripple.style.top  = (e.clientY - r.top) + 'px';
     pill.appendChild(ripple);
     ripple.addEventListener('animationend', () => ripple.remove());
   });
 });
 
-/* ─── 6. ROLE TICKER BLINKING CURSOR ────────────────
-   Add a blinking | after the role text               */
+/* ─── 6. ROLE TICKER BLINKING CURSOR ─────────────────── */
 const chipText = document.querySelector('.chip-text');
 if (chipText && !document.getElementById('ticker-cursor')) {
   const cur = document.createElement('span');
@@ -2156,12 +2177,12 @@ if (chipText && !document.getElementById('ticker-cursor')) {
   chipText.appendChild(cur);
 }
 
-/* ─── 7. SECTION ENTRANCE STAGGER for About facts ── */
+/* ─── 7. ABOUT FACTS STAGGER ─────────────────────────── */
 const factRows = document.querySelectorAll('.fact-row');
 factRows.forEach((row, i) => {
   row.style.opacity = '0';
   row.style.transform = 'translateX(-12px)';
-  row.style.transition = `opacity .5s ${i*0.07}s, transform .5s ${i*0.07}s`;
+  row.style.transition = `opacity .5s ${i * 0.07}s, transform .5s ${i * 0.07}s`;
 });
 const factObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
@@ -2171,33 +2192,25 @@ const factObs = new IntersectionObserver(entries => {
       factRows.forEach(row => { row.style.opacity = '0'; row.style.transform = 'translateX(-12px)'; });
     }
   });
-}, {threshold: 0.3});
+}, { threshold: 0.3 });
 if (factRows.length) factObs.observe(factRows[0].closest('.about-facts') || factRows[0]);
 
-/* ─── 8. SMOOTH MARQUEE PAUSE ON HOVER ──────────────*/
+/* ─── 8. MARQUEE PAUSE ON HOVER ──────────────────────── */
 const marqueeInner = document.querySelector('.marquee-inner');
 if (marqueeInner) {
   marqueeInner.closest('.marquee-strip')?.addEventListener('mouseenter', () => {
     marqueeInner.style.animationPlayState = 'paused';
-  });
+  }, { passive: true });
   marqueeInner.closest('.marquee-strip')?.addEventListener('mouseleave', () => {
     marqueeInner.style.animationPlayState = 'running';
-  });
+  }, { passive: true });
 }
 
-/* ─── 9. CONTACT LINK HOVER FILL ANIMATION ──────────*/
-document.querySelectorAll('.clink').forEach(link => {
-  link.addEventListener('mouseenter', function() {
-    this.style.transition = 'background .2s var(--ease)';
-  });
-});
-
-/* ─── 10. SKILL GROUP STAGGER REVEAL ────────────────*/
+/* ─── 9. SKILL GROUP STAGGER REVEAL ─────────────────── */
 const skillGroups = document.querySelectorAll('.skill-group');
 const skillObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
-    const allGroups = [...skillGroups];
-    const idx = allGroups.indexOf(e.target);
+    const idx = [...skillGroups].indexOf(e.target);
     if (e.isIntersecting) {
       e.target.style.transitionDelay = (idx * 0.06) + 's';
       e.target.classList.add('visible');
@@ -2209,7 +2222,7 @@ const skillObs = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 skillGroups.forEach(g => skillObs.observe(g));
 
-/* ─── 11. EXP CARD SLIDE-FROM-LEFT ──────────────────*/
+/* ─── 10. EXP CARD SLIDE-FROM-LEFT ──────────────────── */
 const expRevealEls = document.querySelectorAll('.exp-reveal');
 const expRevealObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
