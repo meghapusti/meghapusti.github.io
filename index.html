@@ -125,6 +125,20 @@ body.hovering #cur-dot  { width: 12px; height: 12px; }
 body.hovering #cur-ring { width: 52px; height: 52px; opacity: .3; }
 body.clicking #cur-dot  { width: 5px; height: 5px; }
 body.clicking #cur-ring { width: 24px; height: 24px; opacity: .8; }
+/* Restore native cursor on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  html { cursor: auto; }
+  #cur-dot, #cur-ring { display: none; }
+  a, button, .btn, .fbtn, .theme-btn, .exp-card,
+  .spill, .nav-link, .clink, .card-scene, .pcard { cursor: pointer; }
+}
+/* Hide custom cursor & restore default tap indicator on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  html { cursor: auto; }
+  #cur-dot, #cur-ring { display: none; }
+  a, button, .btn, .fbtn, .theme-btn, .exp-card,
+  .spill, .nav-link, .clink, .card-scene, .pcard { cursor: pointer; }
+}
 
 /* ═══════════════ PAGE VEIL ═══════════════ */
 #veil {
@@ -917,7 +931,6 @@ footer {
   .about-text { border-right: none; border-bottom: 1px solid var(--b); }
   .contact-wrap { grid-template-columns: 1fr; }
   .contact-left { border-right: none; border-bottom: 1px solid var(--b); }
-  .exp-track { grid-template-columns: 200px 1fr; }
   .modal-body { grid-template-columns: 1fr; }
   .modal-main { border-right: none; border-bottom: 1px solid var(--b); }
   .section { padding: 64px 28px; }
@@ -933,6 +946,54 @@ footer {
   .modal-main, .modal-sidebar { padding: 24px; }
   .contact-left { padding: 40px 28px; }
   .clink { padding: 22px 24px; }
+
+  /* ── Experience cards: vertical accordion on mobile ── */
+  .exp-card { overflow: visible; }
+
+  /* Kill the horizontal slide — stack panels vertically */
+  .exp-track {
+    flex-direction: column !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .exp-card.open .exp-track { transform: none !important; }
+
+  /* Face panel always full width */
+  .exp-face {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-right: none !important;
+    border-bottom: 1px solid var(--b);
+    transition: background .4s var(--ease);
+  }
+  .exp-card.open .exp-face {
+    width: 100% !important;
+    min-width: 0 !important;
+    border-bottom-color: rgba(255,255,255,.2);
+  }
+
+  /* Detail panel: collapsed by default, animates open downward */
+  .exp-body {
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    padding: 0 24px;
+    transition: max-height .48s cubic-bezier(0.16,1,0.3,1),
+                opacity .28s var(--ease),
+                padding .3s var(--ease);
+  }
+  .exp-card.open .exp-body {
+    max-height: 700px;
+    opacity: 1;
+    pointer-events: auto;
+    padding: 24px;
+  }
+
+  /* Arrow points down on mobile instead of rotating left */
+  .exp-card.open .exp-hint-arrow { transform: rotate(90deg) !important; }
 }
 
 /* ══════════════════════════════════════════════════════
@@ -1427,11 +1488,11 @@ h1.hero-name {
         Let's build<br>something<br><em>worth building.</em>
       </div>
       <p class="contact-note">I'm actively looking for full-time roles in AI/ML engineering, data science, or full-stack development. Singapore-based but open to relocation globally. If you're working on something interesting — reach out.</p>
-      <a href="mailto:meghapusti@gmail.com?subject=Let%27s%20Connect!&body=Hi%20Megha%2C%0A%0A" class="btn btn-accent">Let's Connect! →</a>
+      <a href="/cdn-cgi/l/email-protection#19747c7e7178696c6a6d70597e74787075377a7674266a6c7b737c7a6d24557c6d3c2b2e6a3c2b295a7677777c7a6d383f7b767d602451703c2b29547c7e71783c2b5a3c29583c2958" class="btn btn-accent">Let's Connect! →</a>
     </div>
     <div class="contact-right">
-      <a href="mailto:meghapusti@gmail.com" class="clink">
-        <div><div class="c-lbl">Email</div><div class="c-val">meghapusti@gmail.com</div></div>
+      <a href="/cdn-cgi/l/email-protection#1b767e7c737a6b6e686f725b7c767a727735787476" class="clink">
+        <div><div class="c-lbl">Email</div><div class="c-val"><span class="__cf_email__" data-cfemail="c5a8a0a2ada4b5b0b6b1ac85a2a8a4aca9eba6aaa8">[email&#160;protected]</span></div></div>
         <div class="c-arr">↗</div>
       </a>
       <a href="https://www.linkedin.com/in/meghapusti/" target="_blank" rel="noopener" class="clink">
@@ -1442,8 +1503,8 @@ h1.hero-name {
         <div><div class="c-lbl">GitHub</div><div class="c-val">github.com/meghapusti</div></div>
         <div class="c-arr">↗</div>
       </a>
-      <a href="mailto:megha_pusti@mymail.sutd.edu.sg" class="clink">
-        <div><div class="c-lbl">University Email</div><div class="c-val">megha_pusti@mymail.sutd.edu.sg</div></div>
+      <a href="/cdn-cgi/l/email-protection#563b33313e3709262325223f163b2f3b373f3a782523223278333223782531" class="clink">
+        <div><div class="c-lbl">University Email</div><div class="c-val"><span class="__cf_email__" data-cfemail="9cf1f9fbf4fdc3ece9efe8f5dcf1e5f1fdf5f0b2efe9e8f8b2f9f8e9b2effb">[email&#160;protected]</span></div></div>
         <div class="c-arr">↗</div>
       </a>
     </div>
@@ -1455,7 +1516,7 @@ h1.hero-name {
   <span>Built from scratch · Deploy via GitHub Pages</span>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ─── CURSOR ─────────────────────────────────────────── */
 const dot = document.getElementById('cur-dot');
 const ring = document.getElementById('cur-ring');
@@ -2034,13 +2095,14 @@ renderCards('all');
 /* ─── EXP CARD SLIDE TOGGLE ─────────────────────────── */
 function toggleExp(card) {
   const isOpen = card.classList.contains('open');
+  const isMobile = window.innerWidth <= 600;
   document.querySelectorAll('.exp-card.open').forEach(c => {
     c.classList.remove('open');
-    c.querySelector('.exp-track').style.transform = '';
+    if (!isMobile) c.querySelector('.exp-track').style.transform = '';
   });
   if (!isOpen) {
     card.classList.add('open');
-    card.querySelector('.exp-track').style.transform = 'translateX(-280px)';
+    if (!isMobile) card.querySelector('.exp-track').style.transform = 'translateX(-280px)';
   }
 }
 
